@@ -15,8 +15,8 @@ def bfs(graph, search):
         vertex, r, c, path = queue.pop(0)
         if search == vertex:
             yield path
-        print vertex
-        print path
+        #print vertex
+        #print path
         _r = r + 1
         _c = c + 1
         if _r < len(graph):
