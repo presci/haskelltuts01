@@ -10,6 +10,7 @@ gab0 = map(\l@(x:xs) -> (x, length l)) . group
 
 gab1 :: (Char, Int) -> String
 gab1 (d, 1) = [d]
+gab1 (d, 2) = [d] ++ [d]
 gab1 (d, x) = [d] ++ show x
 
 
