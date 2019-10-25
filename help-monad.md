@@ -1,8 +1,8 @@
-It sounds like you know quite little about Haskell, so I'll give you the executive summary:
 
->>= passes the result of the expression on the left as an argument to the expression on the right, in a way that respects the context the argument and function use
 
->> is used to order the evaluation of expressions within some context; it makes evaluation of the right depend on the evaluation of the left
+        >>= passes the result of the expression on the left as an argument to the expression on the right, in a way that respects the context the argument and function use
+
+        >> is used to order the evaluation of expressions within some context; it makes evaluation of the right depend on the evaluation of the left
 
 Neither of these are the full or completely accurate story, but if you're just trying to get the gist of what a Haskell program is doing, these should be sufficient.
 
