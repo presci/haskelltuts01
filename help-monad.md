@@ -12,7 +12,7 @@ Neither of these are the full or completely accurate story, but if you're just t
 
 In Haskell, both >>= and >> are functions from the Monad class. This means they're overloaded differently for every monad. Read "You Could Have Invented Monads! (And Maybe You Already Have.)" for a very good introduction. I'll just give a quick overview below:
 
->>= is like Scala's flatMap. It takes a function, maps it over an instance of a monad and then flattens the result. For this to work, the function has to return an instance of the monad itself! The type looks like this:
+        >>= is like Scala's flatMap. It takes a function, maps it over an instance of a monad and then flattens the result. For this to work, the function has to return an instance of the monad itself! The type looks like this:
 ```
     (>>=) :: m a -> (a -> m b) -> m b
 ```
