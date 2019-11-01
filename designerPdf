@@ -1,0 +1,41 @@
+{-
+ -
+ - https://www.hackerrank.com/challenges/designer-pdf-viewer/problem
+ -}
+import Data.List
+import Data.Maybe
+
+getintval::(Maybe Int) -> Int
+getintval Nothing = 1
+getintval (Just x) = x
+
+solve'::[Char]->[(Char, Int)] -> Int
+solve' ch lst = k $  map getintval $ map (\x -> finder' x) ch
+  where
+  k::[Int] -> Int
+  k fb = (*) (length ch)   $ foldl (\acc x -> max acc x) 1 fb
+  finder'::Char -> Maybe Int
+  finder' g =  case i of
+            Just(x1,x2) -> Just x2
+            Nothing -> Just 1
+            where i = find(\(val1, val2) -> val1 == g) lst
+
+
+solve::[Char] -> [Char] -> Int
+solve wght val = solve' val rec
+  where
+  rec::[(Char, Int)]
+  rec = zipWith (\x y -> (x, y)) ['a'..'z'] word1
+  word1::[Int]
+  word1 = map(read::String->Int) $ words wght
+
+main::IO()
+main = do
+  weight <- getLine
+  pdfstr <- getLine
+  putStr . show $ solve weight pdfstr
+
+
+test0'::(Maybe Int)  -> Int
+test0' Nothing = 1
+test0' (Just x) = x
