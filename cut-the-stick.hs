@@ -1,8 +1,5 @@
-{--
- - https://www.hackerrank.com/challenges/cut-the-sticks/problem
- --}
 import Data.List
-
+import Data.Ord
 
 solve::[Int] -> [Int]
 solve xss = solve' xss  
@@ -11,6 +8,4 @@ solve xss = solve' xss
     solve' xss = 
         let m = minimum xss
             g =  foldl (\acc x -> if (x - m)  > 0 then (x - m):acc else acc) [] xss
-            k = foldl (\acc x -> if x > 0 then acc + 1 else acc) 0 xss
-            in k:solve' g 
-
+            in length xss:solve' g 
