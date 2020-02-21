@@ -19,7 +19,7 @@ norepeat chs = norepeat' chs
 
 
 norepeat2::[Char] -> Maybe Char
-norepeat2 xss = getnorepeat xss ( getMappedChars xss Map.empty)
+norepeat2 xss = getnorepeat xss $ getMappedChars xss Map.empty
     where
         getMappedChars::[Char] -> Map.Map Char Integer -> Map.Map Char Integer
         getMappedChars [] g = g
