@@ -1,4 +1,4 @@
-# haskelltuts01
+# My Haskell Tutorials
 https://github.com/bitemyapp/learnhaskell
 
 https://lotz84.github.io/haskellbyexample/ex/functions
