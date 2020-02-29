@@ -1,5 +1,6 @@
 # haskelltuts01
 https://github.com/bitemyapp/learnhaskell
+
 https://lotz84.github.io/haskellbyexample/ex/functions
 
 
