@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <div id="data">
+      <table id="math" style="width:95%;font-size:28px;border-spacing:12px">
+      </table>
+    </div>
+  <script type="text/javascript">
+    (function(){
+    for ( var k =0;k<=60; k++){
+        var table = document.getElementById("math");
+        var rowcount = table.rows.length;
+        var row = table.insertRow(rowcount);
+        for ( var ll=0;ll<4;ll++){
+          var l0 = Math.floor((Math.random() * (20 - 9) + 9));
+	        var l1 =  Math.floor((Math.random() * (7 - 3) + 3));
+          var cell0 = row.insertCell(ll);
+          var q0 = l0 - l1;
+          cell0.innerHTML=  q0 + " - " + l1 + " = ";
+        }
+      }
+    })();
+  </script>
+  </body>
+</html>
