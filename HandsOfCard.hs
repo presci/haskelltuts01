@@ -1,6 +1,9 @@
 import Data.List
 
 {-
+https://leetcode.com/problems/hand-of-straights/
+
+
 solve 3 [1,1,2,2,2,3,3,3,4]
 True
 
