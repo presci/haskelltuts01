@@ -41,6 +41,6 @@ This takes the action "readFile file1" and stores the action in x.
 This executes the action "readFile file1" and stores the result of the action in x.
 #### Useful links
 [Link to StackOverflow](https://stackoverflow.com/questions/28624408/equal-vs-left-arrow-symbols-in-haskell/28625714)
-[Applicatives compose, monads don't] (https://stackoverflow.com/questions/7040844/applicatives-compose-monads-dont/7042674#7042674)
+[Applicatives compose, monads don't](https://stackoverflow.com/questions/7040844/applicatives-compose-monads-dont/7042674#7042674)
 [Should do-notation be avoided in Haskell?](https://stackoverflow.com/questions/16726659/should-do-notation-be-avoided-in-haskell)
 
